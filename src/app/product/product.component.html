@@ -2,12 +2,17 @@
               <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
               <div class="card-body">
                 <h4 class="card-title">
-                  <a href="#">Item One</a>
+                  <a href="#">{{product.name}}</a>
                 </h4>
-                <h5>$24.99</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                <h5>${{product.price}}</h5>
+                <p class="card-text">{{product.desc}}</p>
+                <p class="card-text">{{product.status ? 'còn hàng':'hết hàng'}}</p>
               </div>
               <div class="card-footer">
                 <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                <br>
+                <button class="btn btn-primary" (click)="changeStatus()" >click</button>
+                <br>
+                <input type="text" (keyup)="changeName($event)">
               </div>
             </div>
