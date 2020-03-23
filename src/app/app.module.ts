@@ -10,11 +10,12 @@ import { SlideComponent } from './slide/slide.component';
 import { CategolyComponent } from './categoly/categoly.component';
 import { TableComponent } from './table/table.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent, ProductListComponent, ProductComponent, SlideComponent, CategolyComponent, TableComponent, ProductDetailComponent ],
+  declarations: [ AppComponent, HelloComponent, ProductListComponent, ProductComponent, SlideComponent, CategolyComponent, TableComponent, ProductDetailComponent, AboutComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
